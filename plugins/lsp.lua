@@ -42,4 +42,23 @@ return {
   { "neovim/nvim-lspconfig", dependencies = {
     { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
   } },
+  -- Dart
+  "akinsho/flutter-tools.nvim", -- add lsp plugin
+  -- Rust
+  "simrat39/rust-tools.nvim", -- add lsp plugin
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = { "rust_analyzer" },
+    },
+  },
+  -- Typescript
+  "jose-elias-alvarez/typescript.nvim", -- add lsp plugin
+  {
+    "williamboman/mason-lspconfig.nvim",
+    opts = {
+      ensure_installed = { "tsserver" }, -- automatically install lsp
+    },
+  },
+  "dfinance/move-tools", -- add lsp plugin
 }

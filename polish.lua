@@ -1,7 +1,6 @@
 return function()
   local function yaml_ft(path, bufnr)
     -- get content of buffer as string
-    local content = vim.filetype.getlines(bufnr)
     if type(content) == "table" then content = table.concat(content, "\n") end
 
     -- check if file is in roles, tasks, or handlers folder
@@ -23,6 +22,12 @@ return function()
     },
     pattern = {
       ["/tmp/neomutt.*"] = "markdown",
+    },
+  }
+
+  vim.filetype.add {
+    extension = {
+      move = "move",
     },
   }
 

@@ -12,7 +12,7 @@ return {
     terminal_mappings = false,
   } },
   { "rcarriga/nvim-notify", opts = {
-    timeout = 0,
+    timeout = 1000,
   } },
   {
     "mrjones2014/smart-splits.nvim",

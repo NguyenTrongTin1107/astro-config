@@ -1,5 +1,7 @@
 return {
   { "williamboman/mason.nvim", opts = { PATH = "append" } },
+  { "rvmelkonian/move.vim", ft = "move" },
+  { "move-hub/tree-sitter-move", ft = "move" },
   {
     "williamboman/mason-lspconfig.nvim",
     opts = {

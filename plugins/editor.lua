@@ -115,5 +115,4 @@ return {
   },
   { "junegunn/vim-easy-align", event = "User AstroFile" },
   { "machakann/vim-sandwich", event = "User AstroFile" },
-  { "wakatime/vim-wakatime", event = "User AstroFile" },
 }
