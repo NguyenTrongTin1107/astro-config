@@ -1,1 +1,38 @@
 return { diff = { cmd = "terminal_git" }, checker = { enabled = true } }
+-- -- Check if nvim has been opened with neovide
+-- -- function GUI()
+-- --   if vim.g.neovide then
+-- --     return false
+-- --   else
+-- --     return true
+-- --   end
+-- -- end
+
+-- -- Configure require("lazy").setup() options
+-- return function(config)
+--   vim.list_extend(config.spec, {
+--     { import = "user.plugins.chatGPT", enabled = false },
+--   })
+--   return astronvim.extend_tbl(config, {
+--     -- whatever else you want to override with just a simple table merge
+--     -- defaults = { lazy = true },
+--     -- install = { colorscheme = { "everforest" } },
+--     checker = { enabled = true }, -- automatically check for plugin updatesnoice
+--     -- performance = {
+--     --   rtp = {
+--     --     -- customize default disabled vim plugins
+--     --     disabled_plugins = {
+--     --       "nvim-treesitter-textobjects",
+--     --       "tohtml",
+--     --       "gzip",
+--     --       "matchit",
+--     --       "zipPlugin",
+--     --       "netrwPlugin",
+--     --       "tarPlugin",
+--     --       "matchparen",
+--     --     },
+--     --   },
+--     -- },
+--     diff = { cmd = "terminal_git" },
+--   })
+-- end
