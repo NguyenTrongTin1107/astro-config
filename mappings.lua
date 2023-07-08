@@ -151,10 +151,38 @@ local mappings = {
       end,
       desc = "Toggle Buffer",
     },
+    -- ChatGPT
+    ["<leader>?"] = { desc = "Chat GPT" },
+    ["<leader>??"] = { "<cmd>ChatGPT<cr>", desc = "Ask question" },
+    ["<leader>?n"] = { "<cmd>ChatGPTActAs<cr>", desc = "New Model" },
+    ["<leader>?g"] = { "<cmd>ChatGPTRun grammar_correction<cr>", desc = "Grammar Check" },
+    ["<leader>?t"] = { "<cmd>ChatGPTRun translate<cr>", desc = "Translate" },
+    ["<leader>?k"] = { "<cmd>ChatGPTRun keywords<cr>", desc = "Keywords" },
+    ["<leader>?d"] = { "<cmd>ChatGPTRun docstring<cr>", desc = "Docstring" },
+    ["<leader>?e"] = { "<cmd>ChatGPTRun add_tests<cr>", desc = "Add tests" },
+    ["<leader>?o"] = { "<cmd>ChatGPTRun optimize_code<cr>", desc = "Optimize code" },
+    ["<leader>?s"] = { "<cmd>ChatGPTRun summarize<cr>", desc = "Summarize" },
+    ["<leader>?f"] = { "<cmd>ChatGPTRun fix_bugs<cr>", desc = "Fix bugs" },
+    ["<leader>?E"] = { "<cmd>ChatGPTRun explain_code<cr>", desc = "Explain code" },
+    ["<leader>?a"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc = "Readability analysis" },
   },
   v = {
     ["<leader>r"] = { "<Plug>Send", desc = "Send to REPL" },
     ["<leader>s"] = { function() require("spectre").open_visual() end, desc = "Spectre" },
+
+    -- Chat GPT
+    ["<leader>?"] = { desc = "Chat GPT" },
+    ["<leader>?g"] = { "<cmd>ChatGPTRun grammar_correction<cr>", desc = "Grammar Check" },
+    ["<leader>?t"] = { "<cmd>ChatGPTRun translate<cr>", desc = "Translate" },
+    ["<leader>?k"] = { "<cmd>ChatGPTRun keywords<cr>", desc = "Keywords" },
+    ["<leader>?d"] = { "<cmd>ChatGPTRun docstring<cr>", desc = "Docstring" },
+    ["<leader>?e"] = { "<cmd>ChatGPTRun add_tests<cr>", desc = "Add tests" },
+    ["<leader>?o"] = { "<cmd>ChatGPTRun optimize_code<cr>", desc = "Optimize code" },
+    ["<leader>?s"] = { "<cmd>ChatGPTRun summarize<cr>", desc = "Summarize" },
+    ["<leader>?f"] = { "<cmd>ChatGPTRun fix_bugs<cr>", desc = "Fix bugs" },
+    ["<leader>?E"] = { "<cmd>ChatGPTRun explain_code<cr>", desc = "Explain code" },
+    ["<leader>?a"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc = "Readability analysis" },
+    ["<leader>?i"] = { "<cmd>ChatGPTEditWithInstructions<cr>", desc = "Edit with instruction" },
   },
   i = {
     -- signature help, fails silently so attach always
