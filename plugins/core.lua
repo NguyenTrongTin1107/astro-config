@@ -4,13 +4,19 @@ return {
   { "goolord/alpha-nvim", enabled = false },
   { "max397574/better-escape.nvim", enabled = false },
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
+  { "mfussenegger/nvim-dap", enabled = false },
 
-  { "mfussenegger/nvim-dap", dependencies = {
-    { "theHamsta/nvim-dap-virtual-text", config = true },
-  } },
-  { "akinsho/toggleterm.nvim", opts = {
-    terminal_mappings = false,
-  } },
+  -- { "mfussenegger/nvim-dap", dependencies = {
+  --   { "theHamsta/nvim-dap-virtual-text", config = true },
+  -- } },
+  {
+    "akinsho/toggleterm.nvim",
+    opts = {
+      terminal_mappings = false,
+      max_width = 50,
+      render = "wrapped-compact",
+    },
+  },
   { "rcarriga/nvim-notify", opts = {
     timeout = 1000,
   } },

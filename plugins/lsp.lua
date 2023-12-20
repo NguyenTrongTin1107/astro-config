@@ -43,7 +43,7 @@ return {
     { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
   } },
   -- Dart
-  "akinsho/flutter-tools.nvim", -- add lsp plugin
+  -- "akinsho/flutter-tools.nvim", -- add lsp plugin
   -- Rust
   "simrat39/rust-tools.nvim", -- add lsp plugin
   {

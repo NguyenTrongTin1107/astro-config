@@ -118,10 +118,6 @@ local mappings = {
     ["<leader>ml"] = { function() utils.toggle_qf() end, desc = "Logs" },
     ["<leader>mt"] = { "<cmd>TexlabBuild<cr>", desc = "LaTeX" },
     ["<leader>mf"] = { "<cmd>TexlabForward<cr>", desc = "Forward Search" },
-    ["<leader>r"] = { desc = " REPL" },
-    ["<leader>rr"] = { "<Plug>Send", desc = "Send to REPL" },
-    ["<leader>rl"] = { "<Plug>SendLine", desc = "Send line to REPL" },
-    ["<leader>r<cr>"] = { "<cmd>SendHere<cr>", desc = "Set REPL" },
     ["<leader>z"] = { "<cmd>ZenMode<cr>", desc = "Zen Mode" },
     ["<leader>s"] = { desc = "󰛔 Search/Replace" },
     ["<leader>ss"] = { function() require("spectre").open() end, desc = "Spectre" },
@@ -167,7 +163,6 @@ local mappings = {
     ["<leader>?a"] = { "<cmd>ChatGPTRun code_readability_analysis<cr>", desc = "Readability analysis" },
   },
   v = {
-    ["<leader>r"] = { "<Plug>Send", desc = "Send to REPL" },
     ["<leader>s"] = { function() require("spectre").open_visual() end, desc = "Spectre" },
 
     -- Chat GPT
@@ -201,7 +196,7 @@ local mappings = {
   },
   -- terminal mappings
   t = {
-    ["<C-BS>"] = { "<C-\\><C-n>", desc = "Terminal normal mode" },
+    ["<C-n>"] = { "<C-\\><C-n>", desc = "Terminal normal mode" },
     ["<esc><esc>"] = { "<C-\\><C-n>:q<cr>", desc = "Terminal quit" },
   },
   x = {
