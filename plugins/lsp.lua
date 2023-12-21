@@ -23,12 +23,6 @@ return {
     opts = { inlay_hints = { highlight = "Comment" } },
   },
   {
-    "jose-elias-alvarez/typescript.nvim",
-    init = function() table.insert(astronvim.lsp.skip_setup, "tsserver") end,
-    ft = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
-    opts = function() return { server = require("astronvim.utils.lsp").config "tsserver" } end,
-  },
-  {
     "p00f/clangd_extensions.nvim",
     init = function() table.insert(astronvim.lsp.skip_setup, "clangd") end,
     ft = { "c", "cpp", "objc", "objcpp", "cuda", "proto" },
@@ -42,6 +36,13 @@ return {
   { "neovim/nvim-lspconfig", dependencies = {
     { "folke/neoconf.nvim", cmd = "Neoconf", config = true },
   } },
+  -- Typescript
+  {
+    "jose-elias-alvarez/typescript.nvim",
+    init = function() table.insert(astronvim.lsp.skip_setup, "tsserver") end,
+    ft = { "typescript", "typescriptreact", "javascript", "javascriptreact" },
+    opts = function() return { server = require("astronvim.utils.lsp").config "tsserver" } end,
+  },
   -- Dart
   -- "akinsho/flutter-tools.nvim", -- add lsp plugin
   -- Rust
@@ -52,13 +53,6 @@ return {
       ensure_installed = { "rust_analyzer" },
     },
   },
-  -- Typescript
-  "jose-elias-alvarez/typescript.nvim", -- add lsp plugin
-  {
-    "williamboman/mason-lspconfig.nvim",
-    opts = {
-      ensure_installed = { "tsserver" }, -- automatically install lsp
-    },
-  },
+  -- Move
   "dfinance/move-tools", -- add lsp plugin
 }

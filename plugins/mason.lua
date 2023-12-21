@@ -14,7 +14,6 @@ return {
         "neocmake",
         "jsonls",
         "lua_ls",
-        "rome",
         "taplo",
         "tsserver",
         "yamlls",
@@ -27,8 +26,6 @@ return {
       ensure_installed = {
         "shellcheck",
         "stylua",
-        "black",
-        "isort",
         "prettierd",
         "shfmt",
         "shellcheck",
