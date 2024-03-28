@@ -19,15 +19,14 @@ return function()
       qmd = "markdown",
       yml = yaml_ft,
       yaml = yaml_ft,
+      -- Move language
+      move = "move",
     },
     pattern = {
       ["/tmp/neomutt.*"] = "markdown",
-    },
-  }
-
-  vim.filetype.add {
-    extension = {
-      move = "move",
+      -- helm
+      [".*/templates/.*.yaml"] = "helm",
+      [".*/templates/.*.yml"] = "helm",
     },
   }
 
