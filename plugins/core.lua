@@ -5,10 +5,6 @@ return {
   { "max397574/better-escape.nvim", enabled = false },
   { "lukas-reineke/indent-blankline.nvim", enabled = false },
   { "mfussenegger/nvim-dap", enabled = false },
-
-  -- { "mfussenegger/nvim-dap", dependencies = {
-  --   { "theHamsta/nvim-dap-virtual-text", config = true },
-  -- } },
   {
     "akinsho/toggleterm.nvim",
     opts = {
