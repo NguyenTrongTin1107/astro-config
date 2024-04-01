@@ -6,6 +6,11 @@ local catppuccin = require "plugins.user.catppuccin"
 ---@type LazySpec
 return {
   catppuccin,
+  {
+    "mrjones2014/smart-splits.nvim",
+    build = "./kitty/install-kittens.bash",
+    opts = function(_, opts) opts.at_edge = require("smart-splits.types").AtEdgeBehavior.stop end,
+  },
   { "rvmelkonian/move.vim", ft = "move" },
   { "move-hub/tree-sitter-move", ft = "move" },
   "andweeb/presence.nvim",
