@@ -72,6 +72,7 @@ return {
       t = {
         -- setting a mapping to false will disable it
         -- ["<esc>"] = false,
+        ["<C-n>"] = { "<C-\\><C-n>", desc = "Terminal normal mode" },
       },
     },
   },
